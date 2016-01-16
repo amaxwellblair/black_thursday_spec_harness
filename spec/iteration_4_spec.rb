@@ -10,7 +10,7 @@ RSpec.describe "Iteration 4" do
       date = Time.parse("2011-02-27")
       expected = sales_analyst.merchant_revenue_by_date(date)
 
-      expect(expected.length).to eq 4
+      expect(expected).to eq 4
       expect(expected.first.class).to eq Merchant
     end
 
